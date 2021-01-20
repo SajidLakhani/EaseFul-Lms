@@ -1,0 +1,9 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(/src/Assets/font/Poppins-Medium.ttf);
+  }
+
+body {
+    margin: 0;
+    font-family: myFirstFont;
+}
