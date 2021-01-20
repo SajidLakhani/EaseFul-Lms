@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Cart" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:#5f5982}
+        </style>
+    </defs>
+    <g id="shopping-cart">
+        <path id="Path_5" d="M21.08 7a2 2 0 0 0-1.7-1H6.58L6 3.74A1 1 0 0 0 5 3H3a1 1 0 0 0 0 2h1.24L7 15.26A1 1 0 0 0 8 16h9a1 1 0 0 0 .89-.55l3.28-6.56A2 2 0 0 0 21.08 7zm-4.7 7H8.76L7.13 8h12.25z" class="cls-2"/>
+        <circle id="Ellipse_3" cx="1.5" cy="1.5" r="1.5" class="cls-2" transform="translate(6 18)"/>
+        <circle id="Ellipse_4" cx="1.5" cy="1.5" r="1.5" class="cls-2" transform="translate(16 18)"/>
+    </g>
+</svg>

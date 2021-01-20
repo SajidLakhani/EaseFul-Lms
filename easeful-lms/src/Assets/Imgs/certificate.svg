@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84">
+  <g id="Icon" transform="translate(-415 -1038)">
+    <rect id="Rectangle_255" data-name="Rectangle 255" width="84" height="84" rx="5" transform="translate(415 1038)" fill="#ddf7ff"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(438.004 1061.004)">
+      <g id="award" transform="translate(-0.086 -0.086)">
+        <rect id="Rectangle_257" data-name="Rectangle 257" width="38" height="38" transform="translate(0.082 0.082)" fill="#4fc5f3" opacity="0"/>
+        <path id="Path_257" data-name="Path 257" d="M30.553,32.957,26.341,18.1a9.243,9.243,0,0,0,2.389-6.191C28.73,6.435,23.832,2,17.79,2S6.85,6.435,6.85,11.906A9.253,9.253,0,0,0,9.293,18.13L5.026,32.957A1.57,1.57,0,0,0,5.7,34.692a1.982,1.982,0,0,0,2.028.1l9.718-5.168L27.8,34.806a1.8,1.8,0,0,0,.93.215,1.906,1.906,0,0,0,1.482-.619A1.532,1.532,0,0,0,30.553,32.957ZM17.79,5.3c4.028,0,7.293,2.957,7.293,6.6s-3.265,6.6-7.293,6.6-7.293-2.957-7.293-6.6,3.265-6.6,7.293-6.6Zm.565,20.984a1.989,1.989,0,0,0-1.823,0L9.694,29.919l2.626-9.411a11.818,11.818,0,0,0,10.794,0l2.79,9.559Z" transform="translate(1.292 0.572)" fill="#4fc5f3"/>
+      </g>
+    </g>
+  </g>
+</svg>
