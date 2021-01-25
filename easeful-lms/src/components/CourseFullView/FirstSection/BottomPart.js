@@ -6,12 +6,9 @@ import Save from '../../../Assets/Imgs/save.svg'
 import Discussion from '../../../Assets/Imgs/discussion.svg'
 import DownloadIcon from '../../../Assets/Imgs/downloadIcon.svg'
 import Calender from '../../../Assets/Imgs/calender.svg'
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import { Divider, Drawer } from '@material-ui/core';
+import { Divider} from '@material-ui/core';
 import ContentSection from './ContentSection';
+import ReactPlayer from 'react-player'
 import FeedBackSection from '../FeedBackSection/FeedBackSection';
 
 const useStyles = makeStyles({
@@ -68,11 +65,10 @@ export default function BottomPart() {
         <>
             <Card className={classes.root}>
 
-                <CardMedia
-                    className={classes.media}
-                    image={Adobe}
-                    title="image"
-                />
+            <ReactPlayer width='100%'
+            height='100%'
+            controls
+            className = {classes.media} url='https://www.youtube.com/watch?v=14O7AxqjiVY' />
 
             </Card>
 
