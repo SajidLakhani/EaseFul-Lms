@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+  <g id="PurpleBack" transform="translate(-60 -39)">
+    <g id="Back" transform="translate(-2)">
+      <circle id="Ellipse_49" data-name="Ellipse 49" cx="24" cy="24" r="24" transform="translate(62 40)" fill="#5f5982" opacity="0.2"/>
+      <rect id="Rectangle_367" data-name="Rectangle 367" width="51" height="51" rx="5" transform="translate(62 39)" fill="#6c63ff"/>
+      <g id="Layer_2" data-name="Layer 2" transform="translate(74 52)">
+        <g id="arrow-back">
+          <rect id="Rectangle_285" data-name="Rectangle 285" width="24" height="24" transform="translate(24) rotate(90)" fill="#fff" opacity="0"/>
+          <path id="Path_266" data-name="Path 266" d="M19,11H7.14l3.63-4.36A1,1,0,0,0,9.23,5.36l-5,6a1.19,1.19,0,0,0-.09.15.127.127,0,0,1-.07.13.961.961,0,0,0,0,.72.127.127,0,0,0,.07.13,1.19,1.19,0,0,0,.09.15l5,6a1,1,0,1,0,1.54-1.28L7.14,13H19a1,1,0,0,0,0-2Z" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

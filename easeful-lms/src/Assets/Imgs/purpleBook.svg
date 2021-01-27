@@ -1,0 +1,6 @@
+<svg id="purpleBook" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="book">
+    <rect id="Rectangle_288" data-name="Rectangle 288" width="22" height="22" fill="#6c63ff" opacity="0"/>
+    <path id="Path_267" data-name="Path 267" d="M17.125,3H6.625A2.646,2.646,0,0,0,4,5.667V16.333A2.646,2.646,0,0,0,6.625,19h10.5A.882.882,0,0,0,18,18.111V3.889A.882.882,0,0,0,17.125,3ZM6.625,4.778H16.25v8.889H6.625a2.588,2.588,0,0,0-.875.16V5.667A.882.882,0,0,1,6.625,4.778Zm0,12.444a.889.889,0,0,1,0-1.778H16.25v1.778Z" fill="#6c63ff"/>
+  </g>
+</svg>
