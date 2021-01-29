@@ -64,7 +64,7 @@ export default function DiscussionModal({ handleClose, open }) {
                 <p className={classes.para}>Discuss with Teacher</p>
                 <img onClick = {handleClose} className={classes.img} src={RoundCancle} />
               </div>
-              <BottomFields/>
+              <BottomFields handleClose = {handleClose}/>
             </div>
            
           </div>

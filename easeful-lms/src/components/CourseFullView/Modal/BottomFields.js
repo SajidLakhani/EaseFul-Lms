@@ -26,21 +26,32 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#f56962',
         fontSize: "12px",
         textTransform: "unset",
+        "&:hover": {
+            backgroundColor: '#f56962',
+        },
     },
-    skip:{
-        margin:'auto 0'
+    skip: {
+        margin: 'auto 0',
+        cursor:'pointer'
     },
     field: {
+        
+        '& :before': {
+            borderBottom: 'none'
+        },
+        '& :after': {
+            borderBottom: 'none'
+        },
         background: "#ffffff",
         margin: "auto 0",
         marginTop: '10px',
         width: "47%",
         borderRadius: "5px",
-        padding:'0',
-        "& .MuiAutocomplete-inputRoot" :{
-            padding:'0'
+        padding: '0',
+        "& .MuiAutocomplete-inputRoot": {
+            padding: '0'
         },
-        
+
         "& .MuiInputLabel-root": {
             fontSize: "12px",
             textAlign: "center",
@@ -65,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function BottomFields() {
+export default function BottomFields({handleClose}) {
     const classes = useStyles();
     const [selectedDate, setSelectedDate] = React.useState(new Date('2014-08-18T21:11:54'));
 
@@ -113,19 +124,19 @@ export default function BottomFields() {
                     id="combo-box-demo"
                     options={Teacher}
                     getOptionLabel={(option) => option.title}
-                    className = {classes.field}
+                    className={classes.field}
                     renderInput={(params) => <TextField {...params} label="Teacher" variant="outlined" />}
                 />
-                 <Autocomplete
+                <Autocomplete
                     id="combo-box-demo"
                     options={Subject}
                     getOptionLabel={(option) => option.title}
-                    className = {classes.field}
+                    className={classes.field}
                     renderInput={(params) => <TextField {...params} label="Subject" variant="outlined" />}
                 />
             </div>
             <div className={classes.root}>
-                <p className = {classes.skip}>Skip</p>
+                <p className={classes.skip} onClick = {handleClose}>Skip</p>
                 <Button className={classes.button}>Submit now</Button>
             </div>
         </div>
@@ -134,15 +145,15 @@ export default function BottomFields() {
 }
 
 const Teacher = [
-    { title: 'Sajid'},
-    { title: 'Rovid'},
-    { title: 'Faizan'},
+    { title: 'Sajid' },
+    { title: 'Rovid' },
+    { title: 'Faizan' },
 
-  ];
+];
 
-  const Subject = [
-    { title: 'English'},
-    { title: 'Urdu'},
-    { title: 'Physics'},
+const Subject = [
+    { title: 'English' },
+    { title: 'Urdu' },
+    { title: 'Physics' },
 
-  ];
+];

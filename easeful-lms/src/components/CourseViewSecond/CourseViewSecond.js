@@ -1,5 +1,6 @@
 import { makeStyles } from '@material-ui/core'
 import React from 'react'
+import BottomSection from './BottomSection';
 import TopSection from './TopSection'
 
 const useStyles = makeStyles({
@@ -19,6 +20,7 @@ function CourseViewSecond() {
         <div className={classes.Main}>
             <div className={classes.subMain}>
                 <TopSection />
+                <BottomSection/>
             </div>
 
         </div>
