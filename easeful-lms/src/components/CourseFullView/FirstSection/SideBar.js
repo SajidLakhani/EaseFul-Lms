@@ -107,11 +107,8 @@ function SideBar() {
                         <img src={BackIcon} className={classes.image} />
                         <p className={classes.para}>Back</p>
                     </div>
-                    <h1 className={classes.head}>Learn Adobe XD
-& Prototyping</h1>
-
+                    <h1 className={classes.head}>Learn Adobe XD & Prototyping</h1>
                 </div>
-
             </div>
             <ProgressBar />
             <SearchField />

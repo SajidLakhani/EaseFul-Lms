@@ -43,7 +43,6 @@ const useStyles = makeStyles({
         color: '#5F5982',
     }
 
-
 })
 
 function FeedBackSection() {

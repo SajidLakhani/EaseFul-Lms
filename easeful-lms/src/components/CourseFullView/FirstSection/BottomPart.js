@@ -9,7 +9,7 @@ export default function BottomPart() {
     return (
         <>
            <Player Height = '600px' BorderRadius='unset'/>
-            <CourseViewButtons />
+            <CourseViewButtons width = '95%'/>
             <Divider style={{
                 width: '95%',
                 margin: 'auto'

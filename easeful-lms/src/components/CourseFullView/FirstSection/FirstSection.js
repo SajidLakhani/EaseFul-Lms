@@ -5,7 +5,6 @@ const FirstSection = () => {
     return (
         <div>
             <Drawer />
-            
         </div>
     );
 };

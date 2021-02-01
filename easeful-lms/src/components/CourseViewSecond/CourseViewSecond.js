@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core'
 import React from 'react'
-import BottomSection from './BottomSection';
+import BottomSection from './BottomSection/BottomSection';
 import TopSection from './TopSection'
 
 const useStyles = makeStyles({

@@ -37,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     image: {
         margin: 'auto 0px',
         width: '4%',
+        cursor:'pointer'
     },
     contentDiv: {
         margin: 'auto 20px',
@@ -49,12 +50,12 @@ const useStyles = makeStyles((theme) => ({
         "&:hover" : {
             backgroundColor:"#f56962"
         },
-        padding: '10px 22px',
+        padding: '8px 22px',
         color: "white",
         margin:'auto 0',
         width: 'fit-content',
         fontSize: "12px",
-        fontFamily: 'inherit',
+        fontFamily: 'MyFirstFont',
         textTransform: "unset",
         backgroundColor: "#f56962",
     },

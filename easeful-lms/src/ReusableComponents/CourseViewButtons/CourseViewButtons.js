@@ -10,7 +10,6 @@ const useStyles = makeStyles({
 
     Main: {
         display: 'flex',
-        width: '95%',
         margin: '20px auto',
         justifyContent: 'space-between'
     },
@@ -23,7 +22,8 @@ const useStyles = makeStyles({
         display: 'flex',
         backgroundColor: '#d5f5ef',
         borderRadius: '5px',
-        padding: '6px 17px',
+        height:'fit-content',
+        padding: '10px 17px',
     },
 
     para: {
@@ -36,7 +36,7 @@ const useStyles = makeStyles({
 
 })
 
-function CourseViewButtons() {
+function CourseViewButtons({width}) {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
 
@@ -58,18 +58,18 @@ function CourseViewButtons() {
     // };
     return (
         <>
-            <div className={classes.Main}>
+            <div className={classes.Main} style ={{width:`${width}`}}>
                 <div className={classes.innerDiv} >
                     <div className={classes.contentDiv} style={{ marginRight: '15px' }}>
                         <img src={Save} />
                         <p className={classes.para}>Save note</p>
                     </div>
                     <div className={classes.contentDiv} style={{ backgroundColor: "#FEF9E5", marginRight: '15px' }}>
-                        <img src={Discussion} />
+                        <img src={Discussion} style ={{width:'14%'}}/>
                         <p className={classes.para} style={{ color: "#F68C20" }} onClick={handleOpen} >Discussion</p>
                     </div>
                     <div className={classes.contentDiv} style={{ backgroundColor: '#FEEFEE', marginRight: '15px' }}>
-                        <img src={Calender} />
+                        <img src={Calender} style = {{width:'12%'}}/>
                         <p className={classes.para} style={{ color: '#F56962' }}>Add to calendar</p>
                     </div>
                     <div className={classes.contentDiv} style={{ backgroundColor: '#dedcff', marginRight: '15px' }}>
