@@ -28,6 +28,7 @@ import MemberShip from "./components/MemberShip/MemberShip";
 import Instructor from "./components/Instructor/Instructor";
 import CourseFullView from "./components/CourseFullView/CourseFullView";
 import CourseFullViewSecond from './components/CourseViewSecond/CourseViewSecond'
+import CourseQuiz from "./components/CourseQuiz/CourseQuiz";
 const App = () => {
   
   return (
@@ -55,6 +56,7 @@ const App = () => {
           <Route path="/instructor" component={Instructor} />
           <Route path="/coursefullview" component={CourseFullView} />
           <Route path="/courseview-2" component={CourseFullViewSecond} />
+          <Route path="/coursequiz" component={CourseQuiz} />
 
 
 

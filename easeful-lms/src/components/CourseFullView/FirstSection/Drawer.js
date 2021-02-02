@@ -14,6 +14,8 @@ import BottomPart from './BottomPart'
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import SideBar from './SideBar';
+import CourseQuiz from '../../CourseQuiz/CourseQuiz';
+import QuizBottom from '../../CourseQuiz/QuizBottom';
 
 const drawerWidth = 350;
 
@@ -60,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
 
         backgroundColor: 'white',
         color: 'black',
+        boxShadow:'unset',
 
         [theme.breakpoints.up('sm')]: {
             width: `calc(100% - ${drawerWidth}px)`,
@@ -96,8 +99,8 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function ResponsiveDrawer(props) {
-    const { window } = props;
+function ResponsiveDrawer({Quiz}) {
+    // const { window } = props;
     const classes = useStyles();
     const theme = useTheme();
     const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -112,12 +115,12 @@ function ResponsiveDrawer(props) {
         </div>
     );
 
-    const container = window !== undefined ? () => window().document.body : undefined;
+    // const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
         <div className={classes.root}>
             <CssBaseline />
-            <AppBar position="fixed" className={classes.appBar}>
+            {Quiz ? <AppBar position="fixed" className={classes.appBar} style ={{backgroundColor:'#EFEFF6'}}>
                 <Toolbar className={classes.forToolbar}>
                     <IconButton
                         color="inherit"
@@ -143,12 +146,39 @@ function ResponsiveDrawer(props) {
                     </div>
 
                 </Toolbar>
-            </AppBar>
+            </AppBar> : <AppBar position="fixed" className={classes.appBar}>
+                <Toolbar className={classes.forToolbar}>
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={handleDrawerToggle}
+                        className={classes.menuButton}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                    <div className={classes.headDiv}>
+                        <div className={classes.innerDiv}>
+                            <h1 className={classes.heading}>Introduction about xd</h1>
+                            <div className={classes.paraDiv}>
+                                <p className={classes.para}>30 Mint</p >
+                            </div>
+
+
+                        </div>
+
+                        <Button className={classes.button}>Next Lesson</Button>
+
+                    </div>
+
+                </Toolbar>
+            </AppBar> }
+            
             <nav className={classes.drawer} aria-label="mailbox folders">
                 {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
                 <Hidden smUp implementation="css">
                     <Drawer
-                        container={container}
+                        // container={container}
                         variant="temporary"
                         anchor={theme.direction === 'rtl' ? 'right' : 'left'}
                         open={mobileOpen}
@@ -177,18 +207,18 @@ function ResponsiveDrawer(props) {
             </nav>
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-                <BottomPart />
+                {Quiz ? <QuizBottom /> : <BottomPart />}
             </main>
         </div>
     );
 }
 
-ResponsiveDrawer.propTypes = {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    window: PropTypes.func,
-};
+// ResponsiveDrawer.propTypes = {
+//     /**
+//      * Injected by the documentation to work in an iframe.
+//      * You won't need it on your project.
+//      */
+//     window: PropTypes.func,
+// };
 
 export default ResponsiveDrawer;

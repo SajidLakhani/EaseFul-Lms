@@ -1,0 +1,12 @@
+import { TrendingUpTwoTone } from '@material-ui/icons'
+import React from 'react'
+import Drawer from '../CourseFullView/FirstSection/Drawer'
+function CourseQuiz() {
+    return (
+        <div>
+            <Drawer Quiz = {true}/>
+        </div>
+    )
+}
+
+export default CourseQuiz

@@ -78,25 +78,33 @@ function SideBar() {
     const classes = useStyles();
     const data = [
         {
-            heading: 'Change Simplification'
+            heading: 'Change Simplification',
+            link: '/courseview-2'
         },
         {
-            heading: 'Key Skills for the Job Search'
+            heading: 'Key Skills for the Job Search',
+            link: '/courseview-2'
+            
         },
         {
-            heading: 'Additional Exercises '
+            heading: 'Additional Exercises',
+            link: '/courseview-2'
         },
         {
-            heading: 'Entering the Job Market'
+            heading: 'Entering the Job Market',
+            link: '/courseview-2'
         },
         {
-            heading: 'PRACTICE QUIZ'
+            heading: 'PRACTICE QUIZ',
+            link: '/coursequiz'
         },
         {
-            heading: 'Professor for a Day Simulation'
+            heading: 'Professor for a Day Simulation',
+            link: '/courseview-2'
         },
         {
-            heading: 'Customer ux Case Studies'
+            heading: 'Customer ux Case Studies',
+            link: '/courseview-2'
         },
     ]
     return (
@@ -119,7 +127,7 @@ function SideBar() {
                     </div>
                     <div className={classes.forList}>
                         <div className={classes.color}>
-                        <Link to = "/courseview-2" style ={{textDecoration:'none'}}>
+                        <Link to = {item.link} style ={{textDecoration:'none'}}>
                             <div className={classes.innerDiv}>
                                 
                                 <img src={PurpleBook} className={classes.image} />
