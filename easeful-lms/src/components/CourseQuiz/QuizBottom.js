@@ -1,6 +1,6 @@
 import { Button, Grid, makeStyles } from '@material-ui/core'
 import React from 'react'
-
+import PassAndFailModal from './QuizModal/PassAndFailModal'
 const useStyles = makeStyles((theme) => ({
     Main: {
         width: '95%',
@@ -32,18 +32,18 @@ const useStyles = makeStyles((theme) => ({
         border: '1px solid #707070',
         backgroundColor: '#f5f5f5',
         padding: '10px 15px',
-        margin:'20px 0',
-        cursor:'pointer',
+        margin: '20px 0',
+        cursor: 'pointer',
         "&:hover": {
             backgroundColor: '#F68C20',
-            color:'white'
+            color: 'white'
         },
-        
+
     },
-    buttondiv:{
-        margin:'30px 0',
-        display:'flex',
-        justifyContent:'space-between'
+    buttondiv: {
+        margin: '30px 0',
+        display: 'flex',
+        justifyContent: 'space-between'
     },
     button: {
         padding: '8px 20px',
@@ -61,6 +61,15 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function QuizBottom() {
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
     const classes = useStyles();
     const data = [
         {
@@ -98,10 +107,11 @@ function QuizBottom() {
                 ))}
 
             </div>
-            <div className = {classes.buttondiv}>
-            <Button className={classes.button} style ={{backgroundColor:'rgb(254, 249, 229)', color:'#5F5982'}}>Quiz preview : new Interview</Button>
-            <Button className={classes.button} >Quiz next : Short Interview</Button>
+            <div className={classes.buttondiv}>
+                <Button className={classes.button} style={{ backgroundColor: 'rgb(254, 249, 229)', color: '#5F5982' }} onClick={handleOpen}>Quiz preview : new Interview</Button>
+                <Button className={classes.button} onClick={handleOpen}>Quiz next : Short Interview</Button>
             </div>
+            <PassAndFailModal handleClose = {handleClose} handleOpen = {handleOpen} open = {open} Pass = {true}/>
         </div>
     )
 }
