@@ -1,12 +1,10 @@
 import React from "react";
 import HomePage1 from "./components/HomePage/HomePage1";
 import "./App.css";
-import Footer from "./ReusableComponents/Footer/Footer";
 import {
   BrowserRouter as Router,
   Route,
   Switch,
-  withRouter,
 } from "react-router-dom";
 import HomePageTwo from "./components/HomePage2/HomePageTwo";
 import HomePageThree from "./components/HomePage3/HomePage3";
@@ -29,6 +27,10 @@ import Instructor from "./components/Instructor/Instructor";
 import CourseFullView from "./components/CourseFullView/CourseFullView";
 import CourseFullViewSecond from './components/CourseViewSecond/CourseViewSecond'
 import CourseQuiz from "./components/CourseQuiz/CourseQuiz";
+import ReferAndShare from "./components/ReferAndShare/ReferAndShare";
+import CreateEvent from "./components/CreateEvent/CreateEvent";
+import NotFound from "./components/NotFound/NotFound";
+
 const App = () => {
   
   return (
@@ -57,9 +59,9 @@ const App = () => {
           <Route path="/coursefullview" component={CourseFullView} />
           <Route path="/courseview-2" component={CourseFullViewSecond} />
           <Route path="/coursequiz" component={CourseQuiz} />
-
-
-
+          <Route path="/refer" component={ReferAndShare} />
+          <Route path="/create-event" component={CreateEvent}/>
+          <Route path="/404" component={NotFound}/>
         </Switch>
       </Router>
     </div>

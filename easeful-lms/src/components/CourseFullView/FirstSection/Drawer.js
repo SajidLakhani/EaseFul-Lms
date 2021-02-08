@@ -1,21 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
-
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import BottomPart from './BottomPart'
-
+import Event from '../../CreateEvent/Event'
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import SideBar from './SideBar';
-import CourseQuiz from '../../CourseQuiz/CourseQuiz';
 import QuizBottom from '../../CourseQuiz/QuizBottom';
+import ReferSection from '../../ReferAndShare/ReferSection';
 
 const drawerWidth = 350;
 
@@ -99,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function ResponsiveDrawer({Quiz}) {
+function ResponsiveDrawer({Bottom , Refer , forEvent}) {
     // const { window } = props;
     const classes = useStyles();
     const theme = useTheme();
@@ -120,7 +117,7 @@ function ResponsiveDrawer({Quiz}) {
     return (
         <div className={classes.root}>
             <CssBaseline />
-            {Quiz ? <AppBar position="fixed" className={classes.appBar} style ={{backgroundColor:'#EFEFF6'}}>
+            {Bottom ?<AppBar position="fixed" className={classes.appBar}>
                 <Toolbar className={classes.forToolbar}>
                     <IconButton
                         color="inherit"
@@ -137,16 +134,11 @@ function ResponsiveDrawer({Quiz}) {
                             <div className={classes.paraDiv}>
                                 <p className={classes.para}>30 Mint</p >
                             </div>
-
-
                         </div>
-
                         <Button className={classes.button}>Next Lesson</Button>
-
-                    </div>
-
+                    </div> 
                 </Toolbar>
-            </AppBar> : <AppBar position="fixed" className={classes.appBar}>
+            </AppBar> : <AppBar position="fixed" className={classes.appBar} style ={{backgroundColor:'#EFEFF6'}}>
                 <Toolbar className={classes.forToolbar}>
                     <IconButton
                         color="inherit"
@@ -163,14 +155,9 @@ function ResponsiveDrawer({Quiz}) {
                             <div className={classes.paraDiv}>
                                 <p className={classes.para}>30 Mint</p >
                             </div>
-
-
                         </div>
-
                         <Button className={classes.button}>Next Lesson</Button>
-
                     </div>
-
                 </Toolbar>
             </AppBar> }
             
@@ -207,7 +194,7 @@ function ResponsiveDrawer({Quiz}) {
             </nav>
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-                {Quiz ? <QuizBottom /> : <BottomPart />}
+                {Bottom ? <BottomPart /> : Refer ? <ReferSection/> : forEvent ? <Event/> : <QuizBottom />  }
             </main>
         </div>
     );

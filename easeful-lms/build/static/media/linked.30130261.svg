@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <style>
+            .cls-2{fill:#777}
+        </style>
+    </defs>
+    <g id="linkedin">
+        <path id="Path_51" d="M16.125 8.4A6.8 6.8 0 0 0 9.3 15.19v6.86a1.05 1.05 0 0 0 1.05 1.05h2.45a1.05 1.05 0 0 0 1.05-1.05v-6.86a2.263 2.263 0 0 1 2.508-2.252 2.333 2.333 0 0 1 2.042 2.334v6.778a1.05 1.05 0 0 0 1.05 1.05h2.45a1.05 1.05 0 0 0 1.05-1.05v-6.86a6.8 6.8 0 0 0-6.825-6.79z" class="cls-2" transform="translate(1.55 1.4)"/>
+        <rect id="Rectangle_58" width="5.25" height="13.65" class="cls-2" rx=".9" transform="translate(3.5 10.85)"/>
+        <circle id="Ellipse_15" cx="2.625" cy="2.625" r="2.625" class="cls-2" transform="translate(3.5 3.5)"/>
+    </g>
+</svg>

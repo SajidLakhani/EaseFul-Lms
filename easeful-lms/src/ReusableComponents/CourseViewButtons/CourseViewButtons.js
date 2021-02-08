@@ -5,6 +5,7 @@ import Discussion from '../../Assets/Imgs/discussion.svg'
 import DownloadIcon from '../../Assets/Imgs/downloadIcon.svg'
 import Calender from '../../Assets/Imgs/calender.svg'
 import DiscussionModal from '../../components/CourseFullView/Modal/DiscussionModal'
+import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles({
 
@@ -95,10 +96,9 @@ function CourseViewButtons({width}) {
                     <MenuItem onClick={handleClose}>Logout</MenuItem>
                 </Menu>
             </div> */}
-                    <div className={classes.contentDiv} style={{ backgroundColor: '#FEEFEE' }}>
-
+                    <Link to = '/refer' className={classes.contentDiv} style={{ backgroundColor: '#FEEFEE', textDecoration:'none' }}>
                         <p className={classes.para} style={{ color: '#F56962' }}>Refer & Earn</p>
-                    </div>
+                    </Link>
                 </div>
 
             </div>

@@ -7,8 +7,12 @@ const useStyles = makeStyles((theme) => ({
     PinkBack: {
         backgroundColor: '#FD9697',
         height: '100%',
-
     },
+
+    Gridcontainer: {
+        position: 'absolute',
+        height: '100%',
+    }
 
 
 }))
@@ -17,7 +21,7 @@ const Login = () => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <Grid container spacing={3} className={classes.Gridcontainer}>
+            <Grid container  className={classes.Gridcontainer}>
                 <Grid item xs={6} className={classes.PinkBack}>
                     <LeftSide />
                 </Grid>

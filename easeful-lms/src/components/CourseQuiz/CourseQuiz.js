@@ -4,7 +4,7 @@ import Drawer from '../CourseFullView/FirstSection/Drawer'
 function CourseQuiz() {
     return (
         <div>
-            <Drawer Quiz = {true}/>
+            <Drawer/>
         </div>
     )
 }

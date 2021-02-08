@@ -37,10 +37,6 @@ const useStyles = makeStyles((theme) => ({
         color:'#5F5982'
     }
 }))
-
-
-
-
 const RightSide = () => {
     const classes = useStyles();
     return (
@@ -62,7 +58,6 @@ const RightSide = () => {
             <p className={classes.Content}>
                 I am a photo artist and art director from Munich. Last year I was chosen to be one of the nine Adobe Creative Residents in 2019/2020.My pictures are widely known for their colorful, surrealistic touch. by books, lyrics and words in total, I am able to abstract and visualize them into new artworks.
                 </p>
-
                 <BottomContent/>
         </div>
     );

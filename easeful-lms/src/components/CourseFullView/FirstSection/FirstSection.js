@@ -4,7 +4,7 @@ import React from 'react';
 const FirstSection = () => {
     return (
         <div>
-            <Drawer />
+            <Drawer  Bottom = {true}/>
         </div>
     );
 };

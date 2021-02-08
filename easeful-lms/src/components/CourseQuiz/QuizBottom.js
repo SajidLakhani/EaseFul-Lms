@@ -1,5 +1,6 @@
 import { Button, Grid, makeStyles } from '@material-ui/core'
 import React from 'react'
+import ForHeadAndText from '../../ReusableComponents/ForHeadAndText/ForHeadAndText';
 import PassAndFailModal from './QuizModal/PassAndFailModal'
 const useStyles = makeStyles((theme) => ({
     Main: {
@@ -88,10 +89,8 @@ function QuizBottom() {
     ]
     return (
         <div className={classes.Main}>
-            <div>
-                <h1 style={{ color: '#302D3A', fontWeight: 'unset', fontSize: '35px' }}>Quiz For learn </h1>
-                <p style={{ color: '#5F5982' }}>User access can be revoked only when a user leaves the organization. That user’s seat can then be re-assigned to a new employee. You can add seats at any time your the cost of any additional seats are prorated. User access can be revoked only when a user leaves the. That user’s seat can then be re-assigned to a new employee. You can add seats at any time throughout your contract and the cost of any additional seats are prorated. User access can be revoked only when a user . That user’s seat can then be re-assigned to a new employee. User access can be revoked only when a user leaves the organization. That user’s seat can then be re-assigned to You can add seats at any time throughout your contract and the cost of any additional seats are prorated.</p>
-            </div>
+            <ForHeadAndText text = 'User access can be revoked only when a user leaves the organization. That user’s seat can then be re-assigned to a new employee. You can add seats at any time your the cost of any additional seats are prorated. User access can be revoked only when a user leaves the. That user’s seat can then be re-assigned to a new employee. You can add seats at any time throughout your contract and the cost of any additional seats are prorated. User access can be revoked only when a user . That user’s seat can then be re-assigned to a new employee. User access can be revoked only when a user leaves the organization. That user’s seat can then be re-assigned to You can add seats at any time throughout your contract and the cost of any additional seats are prorated.'
+                            head = 'Quiz For learn'/>
             <Grid container className={classes.gridcontainer}>
                 <Grid className={classes.childgrid} item xs={6}>
                     <p style={{ margin: '0' }}>1/1 Question</p>

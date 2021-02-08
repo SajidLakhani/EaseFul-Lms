@@ -61,10 +61,10 @@ const useStyles = makeStyles((theme) => ({
     },
 
     google: {
-        width: '7%',
+        width: '6%',
         borderRadius: 'unset',
         margin: 'auto 0',
-        height: '22px'
+        height: 'fit-content'
     },
 
     buttonGoogle: {

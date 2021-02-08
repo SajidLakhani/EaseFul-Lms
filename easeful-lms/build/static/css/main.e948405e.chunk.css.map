@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,WACI,uBAAwB,CACxB,kDACF,CAEF,KACI,QAAS,CACT,uBACJ","file":"main.e948405e.chunk.css","sourcesContent":["@font-face {\r\n    font-family: myFirstFont;\r\n    src: url(/src/Assets/font/Poppins-Medium.ttf);\r\n  }\r\n\r\nbody {\r\n    margin: 0;\r\n    font-family: myFirstFont;\r\n}"]}
