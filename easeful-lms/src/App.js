@@ -30,6 +30,7 @@ import CourseQuiz from "./components/CourseQuiz/CourseQuiz";
 import ReferAndShare from "./components/ReferAndShare/ReferAndShare";
 import CreateEvent from "./components/CreateEvent/CreateEvent";
 import NotFound from "./components/NotFound/NotFound";
+import TeacherProfileExtended from "./components/TeacherProfile/TeacherProfileExtended/TeacherProfileExtended";
 
 const App = () => {
   
@@ -61,6 +62,7 @@ const App = () => {
           <Route path="/coursequiz" component={CourseQuiz} />
           <Route path="/refer" component={ReferAndShare} />
           <Route path="/create-event" component={CreateEvent}/>
+          <Route path="/teacher-profile-overview" component={TeacherProfileExtended}/>
           <Route path="/404" component={NotFound}/>
         </Switch>
       </Router>

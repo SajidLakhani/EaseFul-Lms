@@ -8,13 +8,13 @@ const useStyles = makeStyles((theme) => ({
     },
     forBack: {
         backgroundColor: '#FEF0EF',
-        height:'35vh'
+        height:'30vh'
     },
     subMain: {
         display: 'flex',
         width: '60%',
         margin: 'auto',
-        paddingTop:'50px'
+        padding:'40px 0'
     }
 }))
 

@@ -1,5 +1,6 @@
 import { makeStyles, Button } from '@material-ui/core';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BottomContent from './BottomContent';
 const useStyles = makeStyles((theme) => ({
     button: {
@@ -19,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'space-between'
     },
     innerDiv: {
-        display: 'flex'
+        display: 'flex',
+        cursor:'pointer'
     },
 
     head: {
@@ -40,8 +42,11 @@ const useStyles = makeStyles((theme) => ({
 const RightSide = () => {
     const classes = useStyles();
     return (
-        <div>
+
+        
+         <div>
             <div className={classes.subMain}>
+                <Link style = {{textDecoration:'none', color:'inherit'}} to = '/teacher-profile-overview'>
                 <div className={classes.innerDiv}>
                     <h3 className={classes.head}>
                         Farrah Fowler
@@ -50,6 +55,7 @@ const RightSide = () => {
                         illustrator & Artist
                 </p>
                 </div>
+                </Link>
                 <Button className={classes.button}>Follow</Button>
             </div>
             <span className={classes.Content}>
@@ -60,6 +66,8 @@ const RightSide = () => {
                 </p>
                 <BottomContent/>
         </div>
+
+       
     );
 };
 
